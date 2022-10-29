@@ -1,0 +1,50 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "text": "Learn Modern ES6+ JavaScript",
+      "completed": true,
+      "color": "red"
+    },
+    {
+      "text": "Learn Redux Basics",
+      "completed": true,
+      "id": 4,
+      "color": "red"
+    },
+    {
+      "text": "Learn Redux fundamentals",
+      "completed": false,
+      "id": 5,
+      "color": "red"
+    },
+    {
+      "text": "learn Redux",
+      "completed": true,
+      "id": 6,
+      "color": "red"
+    },
+    {
+      "text": "Learn Redux Toolkit",
+      "completed": true,
+      "id": 7,
+      "color": "red"
+    },
+    {
+      "text": "Test",
+      "completed": true,
+      "id": 8
+    },
+    {
+      "text": "hdjhdjhdjsdh",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "text": "Learn Redux",
+      "completed": false,
+      "id": 10,
+      "color": "red"
+    }
+  ]
+}
