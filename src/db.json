@@ -3,14 +3,14 @@
     {
       "id": 2,
       "text": "Learn Modern ES6+ JavaScript",
-      "completed": true,
+      "completed": false,
       "color": "red"
     },
     {
-      "text": "Learn Redux Basics",
-      "completed": true,
+      "text": "Learn Redux Basics with Sourav",
+      "completed": false,
       "id": 4,
-      "color": "red"
+      "color": "yellow"
     },
     {
       "text": "Learn Redux fundamentals",
@@ -20,7 +20,7 @@
     },
     {
       "text": "learn Redux",
-      "completed": true,
+      "completed": false,
       "id": 6,
       "color": "red"
     },
@@ -37,12 +37,12 @@
     },
     {
       "text": "hdjhdjhdjsdh",
-      "completed": false,
+      "completed": true,
       "id": 9
     },
     {
       "text": "Learn Redux",
-      "completed": false,
+      "completed": true,
       "id": 10,
       "color": "red"
     }

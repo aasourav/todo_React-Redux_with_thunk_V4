@@ -1,4 +1,3 @@
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import TodoList from "./components/TodoList";
@@ -20,8 +19,6 @@ function App() {
                     <TodoList />
 
                     <hr className="mt-4" />
-
-                    <Footer />
                 </div>
             </div>
         </Provider>

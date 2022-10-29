@@ -1,11 +1,11 @@
-import { priority } from "../actionCreator";
+import { edit } from "../actionCreator";
 
-const updateColor = (todoId, color)=>{
-    return async(dispatch, getState)=>{
+const editTodoText = (todoId, text)=>{
+    return async(dispatch)=>{
         const response = await fetch(`http://localhost:3000/todos/${todoId}`,{
             method: "PATCH",
             body: JSON.stringify({
-                color: color
+                text
             }),
             headers:{
                 "Content-type": "application/json; charset=UTF-8"
@@ -13,8 +13,8 @@ const updateColor = (todoId, color)=>{
         })
         const todo = await response.json();
     
-        dispatch(priority(todo.id));
+        dispatch(edit(todo.id,todo.text));
     }
     
 }
-export default updateColor;
+export default editTodoText;

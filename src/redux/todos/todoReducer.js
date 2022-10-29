@@ -1,4 +1,4 @@
-import { ADDED, CLEARCOMPLETED, COMPLETEALL, DELETED, LOADED, PRIORITY, TOGGLED } from "./actionType";
+import { ADDED, CLEARCOMPLETED, COMPLETEALL, DELETED, EDIT, LOADED, PRIORITY, TOGGLED } from "./actionType";
 import { initState } from "./initialState";
 
 const idPicker = (todos) =>{
@@ -21,6 +21,19 @@ const todoReducer = (state=initState,action)=>{
                     completed: false
                 }
             ]
+        case EDIT:
+            return state.map(todo=>{
+                // console.log(todo.id, action.payload.todoID)
+                if(todo.id === action.payload.todoID){
+                    // console.log('comes here')
+                    return{
+                        ...todo,
+                        text: action.payload.text
+                    }
+                }
+                
+                return todo
+            })
         case TOGGLED:
             return state.map(todo=>{
                 if(todo.id !== action.payload){
